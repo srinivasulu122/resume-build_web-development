@@ -1,0 +1,315 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    gap: 20px;
+}
+
+.form-container {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.resume-container {
+    flex: 1;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    font-size: 28px;
+}
+
+h2 {
+    border-bottom: 2px solid #3498db;
+    padding-bottom: 10px;
+    margin: 20px 0 15px;
+    color: #2c3e50;
+    font-size: 20px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+    color: #555;
+}
+
+input, textarea, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    transition: border 0.3s;
+}
+
+input:focus, textarea:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin: 5px 0;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.btn-secondary {
+    background-color: #95a5a6;
+}
+
+.btn-secondary:hover {
+    background-color: #7f8c8d;
+}
+
+.btn-print {
+    background-color: #27ae60;
+}
+
+.btn-print:hover {
+    background-color: #229954;
+}
+
+.button-group {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+button {
+    flex: 1 1 120px;
+}
+
+/* Resume Styles */
+.resume {
+    font-family: 'Georgia', serif;
+    padding: 40px;
+    background: white;
+    line-height: 1.6;
+}
+
+.resume-header {
+    text-align: center;
+    margin-bottom: 30px;
+    padding-bottom: 20px;
+}
+
+.resume-title {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #2c3e50;
+}
+
+.resume-subtitle {
+    font-size: 18px;
+    font-weight: 500;
+    color: #3498db;
+    margin-bottom: 10px;
+}
+
+.resume-contact {
+    font-size: 14px;
+    color: #7f8c8d;
+    margin-bottom: 10px;
+}
+
+.resume-links a {
+    color: #3498db;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+.resume-links a:hover {
+    text-decoration: underline;
+}
+
+.resume-section {
+    margin-bottom: 30px;
+}
+
+.resume-section-title {
+    font-size: 20px;
+    font-weight: bold;
+    color: #3498db;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+.resume-item {
+    margin-bottom: 20px;
+}
+
+.resume-item-title {
+    font-weight: bold;
+    font-size: 18px;
+    color: #2c3e50;
+}
+
+.resume-item-subtitle {
+    font-style: italic;
+    color: #7f8c8d;
+    margin-bottom: 5px;
+}
+
+.resume-item-date {
+    font-size: 14px;
+    color: #95a5a6;
+    font-weight: 500;
+}
+
+.resume-item-description {
+    margin-top: 8px;
+    text-align: justify;
+}
+
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skill-item {
+    background-color: #eaf2f8;
+    padding: 5px 12px;
+    border-radius: 15px;
+    font-size: 14px;
+    color: #2c3e50;
+    font-weight: 500;
+}
+
+/* Experience and Education Items */
+.item-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 5px;
+}
+
+.experience-item, .education-item {
+    background: #f9f9f9;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.remove-experience, .remove-education {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.remove-experience:hover, .remove-education:hover {
+    background: #c0392b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+    
+    .button-group {
+        flex-direction: column;
+    }
+    
+    button {
+        width: 100%;
+    }
+    
+    .resume {
+        padding: 20px;
+    }
+}
+
+/* Print Styles */
+@media print {
+    body > *:not(#print-resume) {
+        display: none !important;
+    }
+    
+    #print-resume {
+        display: block !important;
+        padding: 40px;
+        font-family: 'Georgia', serif;
+        font-size: 12pt;
+        line-height: 1.6;
+        color: #333;
+        width: 100%;
+    }
+
+    @page {
+        margin: 0.5in;
+    }
+
+    .resume-item {
+        page-break-inside: avoid;
+        break-inside: avoid;
+    }
+
+    a {
+        color: #3498db;
+        text-decoration: none;
+    }
+
+    .skill-item {
+        border: 1px solid #3498db;
+        background: none;
+    }
+}
